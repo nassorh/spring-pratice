@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CouplingPraticeApplication {
 
 	public static void main(String[] args) {
-		BinarySearchImpl binarySearch = new BinarySearchImpl();
+		BinarySearchImpl binarySearch = new BinarySearchImpl(new BubbleSortAlgorithm()); //We can change what algorithm we can use
 		int result = binarySearch.binarySearch(new int[] {12,4,6, 3}, 3);
 		System.out.println(result);
 
